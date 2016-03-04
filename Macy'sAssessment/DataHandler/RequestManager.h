@@ -12,4 +12,14 @@
 + (void) getAcronymForString:(NSString *)string
               fromDataSource:(DataSource)dataSource
               withCompletion:(DSCompletion)completion;
+
+/*
+// Singleton Version of API call.
+- (void) getAcronymForString:(NSString *)string
+              fromDataSource:(DataSource)dataSource
+              withCompletion:(DSCompletion)completion;
+
+- (instancetype)init __attribute__((unavailable("init not available, use sharedManager instead")));
++(instancetype)sharedManager;
+ */
 @end

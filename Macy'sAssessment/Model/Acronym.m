@@ -18,6 +18,7 @@
         _lf = data[@"lf"] ? data[@"lf"] : [NSNull null];
         _since = data[@"since"] ? data[@"since"] : [NSNull null];
         
+        // Since dataSource Schema is similar, Can recursively use same Model Class to parse.
         if ([[data allKeys] containsObject:@"vars"]) {
             // contains a child object
             NSMutableArray *retValue = [NSMutableArray new];

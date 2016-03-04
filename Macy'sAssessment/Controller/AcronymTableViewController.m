@@ -22,6 +22,7 @@
 
 @implementation AcronymTableViewController
 
+// Would like to have Lazy Instantiation
 -(MBProgressHUD *)activityIndicator
 {
     if (!_activityIndicator) {
@@ -40,6 +41,9 @@
     [self.activityIndicator show:YES];
     NSString *string  = self.txtURL.text;
     
+    // No need to jump to main Thread, as call is on main Thread, I am not doing much after response which Have to be on background thread, If required Can move to background.
+    // Make use of weakSelf in block to avoid retain cycle. A tweek using strongSelf from a weakSelf inside blcok is just to avaoid possible deallocation of self declared weak to use in block.
+    
     __weak typeof(self) weakSelf = self;
     [RequestManager getAcronymForString:string fromDataSource:DATA_SOURCE_ANY withCompletion:^(BOOL success, id result, DSErrorCode errorCode) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
@@ -53,8 +57,28 @@
             [strongSelf.activityIndicator hide:YES];
         }
     }];
+    
+    // Singleton version API call,, To use this uncomment API call related code in RequestManager.
+     
+    /*
+    __weak typeof(self) weakSelf = self;
+    [[RequestManager sharedManager] getAcronymForString:string fromDataSource:DATA_SOURCE_ANY withCompletion:^(BOOL success, id result, DSErrorCode errorCode) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        if (success) {
+            NSLog(@"Is main Thread %@",[NSThread isMainThread] ? @"YES" : @"NO");
+            strongSelf.dataSource = (NSArray *)result;
+            [strongSelf.tableView reloadData];
+            [strongSelf.activityIndicator hide:YES];
+        } else {
+            [strongSelf handleError:errorCode];
+            [strongSelf.activityIndicator hide:YES];
+        }
+    }];
+     */
+    
 }
 
+// Can have specific error handler based on DSErrorCode.
 -(void)handleError:(DSErrorCode)error{
     
     UIAlertController * alert=   [UIAlertController
@@ -79,6 +103,7 @@
 
 -(void)setUP
 {
+    // Define Dynamic cell height
     self.tableView.estimatedRowHeight = 44.0f;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
 }
@@ -89,6 +114,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Since using same controller(Can use because dataSource schema is similar) for DetailViewController, want to execute API call only once and rest of the time through different Mechanism
+    // Make use of weakSelf in block to avoid retain cycle. A tweek using strongSelf from a weakSelf inside blcok is just to avaoid possible deallocation of self declared weak to use in block
     __weak typeof(self) weakSelf = self;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -157,6 +185,8 @@
     
 }
 
+
+#pragma Mark, Error Handler & Validation
 -(BOOL)isValidText
 {
     BOOL retValue = NO;

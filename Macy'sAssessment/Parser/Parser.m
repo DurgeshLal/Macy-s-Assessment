@@ -12,6 +12,7 @@
 @implementation Parser
 +(void)parseData:(id)data withCompletionHandler:(DSCompletion)comp
 {
+    // Would like to early exit in case response is an empty array, Thanks to Apple for there gaurd statement in swift. But still a pain in Objective-C
     if (!IS_VALID_ARRAY((NSArray *)data)) {
         comp(YES,@[], DSErrorNoContent);
         return;
