@@ -139,6 +139,7 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
+    [self getAcronymFromAPI];
     [textField resignFirstResponder];
     return YES;
 }

@@ -73,7 +73,10 @@
                             <rect key="frame" x="180" y="7" width="240" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            <connections>
+                                <outlet property="delegate" destination="jfb-oF-Fvx" id="60d-nv-7Qi"/>
+                            </connections>
                         </textField>
                         <barButtonItem key="rightBarButtonItem" title="search" id="YOH-bH-KjD">
                             <connections>
