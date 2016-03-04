@@ -9,7 +9,7 @@
         <!--Acronym Table View Controller-->
         <scene sceneID="NQF-Vz-PhY">
             <objects>
-                <tableViewController id="jfb-oF-Fvx" customClass="AcronymTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="AcronymTableViewController" id="jfb-oF-Fvx" customClass="AcronymTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="91" sectionHeaderHeight="28" sectionFooterHeight="28" id="VGa-Yk-HHr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

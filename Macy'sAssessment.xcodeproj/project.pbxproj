@@ -25,6 +25,7 @@
 		EA1CC04A1C8918BC00EC5626 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0491C8918BC00EC5626 /* Parser.m */; };
 		EA1CC04E1C891AD600EC5626 /* RequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC04D1C891AD600EC5626 /* RequestBuilder.m */; };
 		EA1CC0551C893A6A00EC5626 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0541C893A6A00EC5626 /* Reachability.m */; };
+		EA1CC0591C89DA2300EC5626 /* AcronymTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0581C89DA2300EC5626 /* AcronymTableViewControllerTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		EA1CC04D1C891AD600EC5626 /* RequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestBuilder.m; path = RequestBuilder/RequestBuilder.m; sourceTree = "<group>"; };
 		EA1CC0531C893A6A00EC5626 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ThirdParty/Reachability/Reachability.h; sourceTree = "<group>"; };
 		EA1CC0541C893A6A00EC5626 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ThirdParty/Reachability/Reachability.m; sourceTree = "<group>"; };
+		EA1CC0581C89DA2300EC5626 /* AcronymTableViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcronymTableViewControllerTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 		EA1CC0131C8911DF00EC5626 /* Macy'sAssessmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				EA1CC0581C89DA2300EC5626 /* AcronymTableViewControllerTest.m */,
 				EA1CC0141C8911DF00EC5626 /* Macy_sAssessmentTests.m */,
 				EA1CC0161C8911DF00EC5626 /* Info.plist */,
 			);
@@ -565,6 +568,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1CC0591C89DA2300EC5626 /* AcronymTableViewControllerTest.m in Sources */,
 				EA1CC0151C8911DF00EC5626 /* Macy_sAssessmentTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
