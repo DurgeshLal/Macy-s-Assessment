@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E8D8CB74D16027858E56ECC /* libPods-Macy'sAssessmentTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B14329B84FA2CF5B2928BC43 /* libPods-Macy'sAssessmentTests.a */; };
+		623FB6EA75BCFD149E3AD696 /* libPods-Macy'sAssessmentUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C20C29E7D201F2C2E6E8F93A /* libPods-Macy'sAssessmentUITests.a */; };
+		A7F5907FDFFC600084C172EC /* libPods-Macy'sAssessment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C66986D1726939E93EBAD25 /* libPods-Macy'sAssessment.a */; };
+		EA1CBFFC1C8911DF00EC5626 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CBFFB1C8911DF00EC5626 /* main.m */; };
+		EA1CBFFF1C8911DF00EC5626 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CBFFE1C8911DF00EC5626 /* AppDelegate.m */; };
+		EA1CC0051C8911DF00EC5626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1CC0031C8911DF00EC5626 /* Main.storyboard */; };
+		EA1CC0071C8911DF00EC5626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA1CC0061C8911DF00EC5626 /* Assets.xcassets */; };
+		EA1CC00A1C8911DF00EC5626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1CC0081C8911DF00EC5626 /* LaunchScreen.storyboard */; };
+		EA1CC0151C8911DF00EC5626 /* Macy_sAssessmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0141C8911DF00EC5626 /* Macy_sAssessmentTests.m */; };
+		EA1CC0201C8911DF00EC5626 /* Macy_sAssessmentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC01F1C8911DF00EC5626 /* Macy_sAssessmentUITests.m */; };
+		EA1CC02F1C89120500EC5626 /* Acronym.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC02E1C89120500EC5626 /* Acronym.m */; };
+		EA1CC0331C89123700EC5626 /* DataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0321C89123700EC5626 /* DataHandler.m */; };
+		EA1CC0371C89127500EC5626 /* AcronymTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0361C89127500EC5626 /* AcronymTableViewController.m */; };
+		EA1CC03B1C8912B300EC5626 /* AcronymTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC03A1C8912B300EC5626 /* AcronymTableCell.m */; };
+		EA1CC0471C8917A100EC5626 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0461C8917A100EC5626 /* Constant.m */; };
+		EA1CC04A1C8918BC00EC5626 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0491C8918BC00EC5626 /* Parser.m */; };
+		EA1CC04E1C891AD600EC5626 /* RequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC04D1C891AD600EC5626 /* RequestBuilder.m */; };
+		EA1CC0551C893A6A00EC5626 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0541C893A6A00EC5626 /* Reachability.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA1CC0111C8911DF00EC5626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA1CBFEF1C8911DF00EC5626 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA1CBFF61C8911DF00EC5626;
+			remoteInfo = "Macy'sAssessment";
+		};
+		EA1CC01C1C8911DF00EC5626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA1CBFEF1C8911DF00EC5626 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA1CBFF61C8911DF00EC5626;
+			remoteInfo = "Macy'sAssessment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D71A8C9E4ABDDEFF5B78B97 /* Pods-Macy'sAssessmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macy'sAssessmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Macy'sAssessmentUITests/Pods-Macy'sAssessmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		32E2C70304E09B09D1C386C7 /* Pods-Macy'sAssessmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macy'sAssessmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Macy'sAssessmentTests/Pods-Macy'sAssessmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C66986D1726939E93EBAD25 /* libPods-Macy'sAssessment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Macy'sAssessment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A303D2F306F52220B22A767 /* Pods-Macy'sAssessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macy'sAssessment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Macy'sAssessment/Pods-Macy'sAssessment.debug.xcconfig"; sourceTree = "<group>"; };
+		7EB61893799BB22A3A1FF807 /* Pods-Macy'sAssessmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macy'sAssessmentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Macy'sAssessmentUITests/Pods-Macy'sAssessmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F0037E47636D8C66F3B19BD /* Pods-Macy'sAssessmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macy'sAssessmentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Macy'sAssessmentTests/Pods-Macy'sAssessmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		B14329B84FA2CF5B2928BC43 /* libPods-Macy'sAssessmentTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Macy'sAssessmentTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20C29E7D201F2C2E6E8F93A /* libPods-Macy'sAssessmentUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Macy'sAssessmentUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC734B43E6826B2651D12EC2 /* Pods-Macy'sAssessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macy'sAssessment.release.xcconfig"; path = "Pods/Target Support Files/Pods-Macy'sAssessment/Pods-Macy'sAssessment.release.xcconfig"; sourceTree = "<group>"; };
+		EA1CBFF71C8911DF00EC5626 /* Macy'sAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Macy'sAssessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA1CBFFB1C8911DF00EC5626 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA1CBFFD1C8911DF00EC5626 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA1CBFFE1C8911DF00EC5626 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA1CC0041C8911DF00EC5626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA1CC0061C8911DF00EC5626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA1CC0091C8911DF00EC5626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA1CC00B1C8911DF00EC5626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA1CC0101C8911DF00EC5626 /* Macy'sAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Macy'sAssessmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA1CC0141C8911DF00EC5626 /* Macy_sAssessmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Macy_sAssessmentTests.m; sourceTree = "<group>"; };
+		EA1CC0161C8911DF00EC5626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA1CC01B1C8911DF00EC5626 /* Macy'sAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Macy'sAssessmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA1CC01F1C8911DF00EC5626 /* Macy_sAssessmentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Macy_sAssessmentUITests.m; sourceTree = "<group>"; };
+		EA1CC0211C8911DF00EC5626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA1CC02D1C89120500EC5626 /* Acronym.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Acronym.h; path = Model/Acronym.h; sourceTree = "<group>"; };
+		EA1CC02E1C89120500EC5626 /* Acronym.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Acronym.m; path = Model/Acronym.m; sourceTree = "<group>"; };
+		EA1CC0311C89123700EC5626 /* DataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataHandler.h; path = DataHandler/DataHandler.h; sourceTree = "<group>"; };
+		EA1CC0321C89123700EC5626 /* DataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataHandler.m; path = DataHandler/DataHandler.m; sourceTree = "<group>"; };
+		EA1CC0351C89127500EC5626 /* AcronymTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AcronymTableViewController.h; path = Controller/AcronymTableViewController.h; sourceTree = "<group>"; };
+		EA1CC0361C89127500EC5626 /* AcronymTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AcronymTableViewController.m; path = Controller/AcronymTableViewController.m; sourceTree = "<group>"; };
+		EA1CC0391C8912B300EC5626 /* AcronymTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AcronymTableCell.h; path = View/AcronymTableCell.h; sourceTree = "<group>"; };
+		EA1CC03A1C8912B300EC5626 /* AcronymTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AcronymTableCell.m; path = View/AcronymTableCell.m; sourceTree = "<group>"; };
+		EA1CC0451C8917A100EC5626 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		EA1CC0461C8917A100EC5626 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
+		EA1CC0481C8918BC00EC5626 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Parser.h; path = Parser/Parser.h; sourceTree = "<group>"; };
+		EA1CC0491C8918BC00EC5626 /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Parser.m; path = Parser/Parser.m; sourceTree = "<group>"; };
+		EA1CC04C1C891AD600EC5626 /* RequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestBuilder.h; path = RequestBuilder/RequestBuilder.h; sourceTree = "<group>"; };
+		EA1CC04D1C891AD600EC5626 /* RequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestBuilder.m; path = RequestBuilder/RequestBuilder.m; sourceTree = "<group>"; };
+		EA1CC0531C893A6A00EC5626 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ThirdParty/Reachability/Reachability.h; sourceTree = "<group>"; };
+		EA1CC0541C893A6A00EC5626 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ThirdParty/Reachability/Reachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA1CBFF41C8911DF00EC5626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F5907FDFFC600084C172EC /* libPods-Macy'sAssessment.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA1CC00D1C8911DF00EC5626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E8D8CB74D16027858E56ECC /* libPods-Macy'sAssessmentTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA1CC0181C8911DF00EC5626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623FB6EA75BCFD149E3AD696 /* libPods-Macy'sAssessmentUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B01FB0937B04B18E97806B96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A303D2F306F52220B22A767 /* Pods-Macy'sAssessment.debug.xcconfig */,
+				CC734B43E6826B2651D12EC2 /* Pods-Macy'sAssessment.release.xcconfig */,
+				32E2C70304E09B09D1C386C7 /* Pods-Macy'sAssessmentTests.debug.xcconfig */,
+				9F0037E47636D8C66F3B19BD /* Pods-Macy'sAssessmentTests.release.xcconfig */,
+				7EB61893799BB22A3A1FF807 /* Pods-Macy'sAssessmentUITests.debug.xcconfig */,
+				0D71A8C9E4ABDDEFF5B78B97 /* Pods-Macy'sAssessmentUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B4E193B7F04A78DD6D533A32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C66986D1726939E93EBAD25 /* libPods-Macy'sAssessment.a */,
+				B14329B84FA2CF5B2928BC43 /* libPods-Macy'sAssessmentTests.a */,
+				C20C29E7D201F2C2E6E8F93A /* libPods-Macy'sAssessmentUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA1CBFEE1C8911DF00EC5626 = {
+			isa = PBXGroup;
+			children = (
+				EA1CBFF91C8911DF00EC5626 /* Macy'sAssessment */,
+				EA1CC0131C8911DF00EC5626 /* Macy'sAssessmentTests */,
+				EA1CC01E1C8911DF00EC5626 /* Macy'sAssessmentUITests */,
+				EA1CBFF81C8911DF00EC5626 /* Products */,
+				B01FB0937B04B18E97806B96 /* Pods */,
+				B4E193B7F04A78DD6D533A32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA1CBFF81C8911DF00EC5626 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CBFF71C8911DF00EC5626 /* Macy'sAssessment.app */,
+				EA1CC0101C8911DF00EC5626 /* Macy'sAssessmentTests.xctest */,
+				EA1CC01B1C8911DF00EC5626 /* Macy'sAssessmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA1CBFF91C8911DF00EC5626 /* Macy'sAssessment */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CC0561C893A6F00EC5626 /* ThirdParty */,
+				EA1CC0341C89124100EC5626 /* DataHandler */,
+				EA1CC04B1C8918C400EC5626 /* Parser */,
+				EA1CC04F1C891AE100EC5626 /* RequestBuilder */,
+				EA1CC0401C8912F100EC5626 /* Utility */,
+				EA1CC03C1C8912BB00EC5626 /* View */,
+				EA1CC0381C89128600EC5626 /* Controller */,
+				EA1CC0301C89121600EC5626 /* Model */,
+				EA1CBFFD1C8911DF00EC5626 /* AppDelegate.h */,
+				EA1CBFFE1C8911DF00EC5626 /* AppDelegate.m */,
+				EA1CC0031C8911DF00EC5626 /* Main.storyboard */,
+				EA1CC0061C8911DF00EC5626 /* Assets.xcassets */,
+				EA1CC0081C8911DF00EC5626 /* LaunchScreen.storyboard */,
+				EA1CC00B1C8911DF00EC5626 /* Info.plist */,
+				EA1CBFFA1C8911DF00EC5626 /* Supporting Files */,
+			);
+			path = "Macy'sAssessment";
+			sourceTree = "<group>";
+		};
+		EA1CBFFA1C8911DF00EC5626 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CBFFB1C8911DF00EC5626 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA1CC0131C8911DF00EC5626 /* Macy'sAssessmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CC0141C8911DF00EC5626 /* Macy_sAssessmentTests.m */,
+				EA1CC0161C8911DF00EC5626 /* Info.plist */,
+			);
+			path = "Macy'sAssessmentTests";
+			sourceTree = "<group>";
+		};
+		EA1CC01E1C8911DF00EC5626 /* Macy'sAssessmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CC01F1C8911DF00EC5626 /* Macy_sAssessmentUITests.m */,
+				EA1CC0211C8911DF00EC5626 /* Info.plist */,
+			);
+			path = "Macy'sAssessmentUITests";
+			sourceTree = "<group>";
+		};
+		EA1CC0301C89121600EC5626 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CC02D1C89120500EC5626 /* Acronym.h */,
+				EA1CC02E1C89120500EC5626 /* Acronym.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EA1CC0341C89124100EC5626 /* DataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CC0311C89123700EC5626 /* DataHandler.h */,
+				EA1CC0321C89123700EC5626 /* DataHandler.m */,
+			);
+			name = DataHandler;
+			sourceTree = "<group>";
+		};
+		EA1CC0381C89128600EC5626 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CC0351C89127500EC5626 /* AcronymTableViewController.h */,
+				EA1CC0361C89127500EC5626 /* AcronymTableViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EA1CC03C1C8912BB00EC5626 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CC0391C8912B300EC5626 /* AcronymTableCell.h */,
+				EA1CC03A1C8912B300EC5626 /* AcronymTableCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EA1CC0401C8912F100EC5626 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CC0451C8917A100EC5626 /* Constant.h */,
+				EA1CC0461C8917A100EC5626 /* Constant.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		EA1CC04B1C8918C400EC5626 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CC0481C8918BC00EC5626 /* Parser.h */,
+				EA1CC0491C8918BC00EC5626 /* Parser.m */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		EA1CC04F1C891AE100EC5626 /* RequestBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CC04C1C891AD600EC5626 /* RequestBuilder.h */,
+				EA1CC04D1C891AD600EC5626 /* RequestBuilder.m */,
+			);
+			name = RequestBuilder;
+			sourceTree = "<group>";
+		};
+		EA1CC0561C893A6F00EC5626 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CC0571C893A7B00EC5626 /* Reachability */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		EA1CC0571C893A7B00EC5626 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				EA1CC0531C893A6A00EC5626 /* Reachability.h */,
+				EA1CC0541C893A6A00EC5626 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA1CBFF61C8911DF00EC5626 /* Macy'sAssessment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA1CC0241C8911DF00EC5626 /* Build configuration list for PBXNativeTarget "Macy'sAssessment" */;
+			buildPhases = (
+				62EC03DEA4FB8C29FE5A789E /* Check Pods Manifest.lock */,
+				EA1CBFF31C8911DF00EC5626 /* Sources */,
+				EA1CBFF41C8911DF00EC5626 /* Frameworks */,
+				EA1CBFF51C8911DF00EC5626 /* Resources */,
+				31208CF33E154EC1D18487D1 /* Embed Pods Frameworks */,
+				CA6E283CBBF48D4D334860C9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Macy'sAssessment";
+			productName = "Macy'sAssessment";
+			productReference = EA1CBFF71C8911DF00EC5626 /* Macy'sAssessment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA1CC00F1C8911DF00EC5626 /* Macy'sAssessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA1CC0271C8911DF00EC5626 /* Build configuration list for PBXNativeTarget "Macy'sAssessmentTests" */;
+			buildPhases = (
+				6ADD13770139D870C0922F2D /* Check Pods Manifest.lock */,
+				EA1CC00C1C8911DF00EC5626 /* Sources */,
+				EA1CC00D1C8911DF00EC5626 /* Frameworks */,
+				EA1CC00E1C8911DF00EC5626 /* Resources */,
+				92F4448FDBE0DB164FF19569 /* Embed Pods Frameworks */,
+				E956C14039C2CE0415C76123 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA1CC0121C8911DF00EC5626 /* PBXTargetDependency */,
+			);
+			name = "Macy'sAssessmentTests";
+			productName = "Macy'sAssessmentTests";
+			productReference = EA1CC0101C8911DF00EC5626 /* Macy'sAssessmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA1CC01A1C8911DF00EC5626 /* Macy'sAssessmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA1CC02A1C8911DF00EC5626 /* Build configuration list for PBXNativeTarget "Macy'sAssessmentUITests" */;
+			buildPhases = (
+				18EA8B1501F621513713B871 /* Check Pods Manifest.lock */,
+				EA1CC0171C8911DF00EC5626 /* Sources */,
+				EA1CC0181C8911DF00EC5626 /* Frameworks */,
+				EA1CC0191C8911DF00EC5626 /* Resources */,
+				2D38C14FE9F7032B0A71C35C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA1CC01D1C8911DF00EC5626 /* PBXTargetDependency */,
+			);
+			name = "Macy'sAssessmentUITests";
+			productName = "Macy'sAssessmentUITests";
+			productReference = EA1CC01B1C8911DF00EC5626 /* Macy'sAssessmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA1CBFEF1C8911DF00EC5626 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Durgesh Gupta";
+				TargetAttributes = {
+					EA1CBFF61C8911DF00EC5626 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					EA1CC00F1C8911DF00EC5626 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = EA1CBFF61C8911DF00EC5626;
+					};
+					EA1CC01A1C8911DF00EC5626 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = EA1CBFF61C8911DF00EC5626;
+					};
+				};
+			};
+			buildConfigurationList = EA1CBFF21C8911DF00EC5626 /* Build configuration list for PBXProject "Macy'sAssessment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA1CBFEE1C8911DF00EC5626;
+			productRefGroup = EA1CBFF81C8911DF00EC5626 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA1CBFF61C8911DF00EC5626 /* Macy'sAssessment */,
+				EA1CC00F1C8911DF00EC5626 /* Macy'sAssessmentTests */,
+				EA1CC01A1C8911DF00EC5626 /* Macy'sAssessmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA1CBFF51C8911DF00EC5626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1CC00A1C8911DF00EC5626 /* LaunchScreen.storyboard in Resources */,
+				EA1CC0071C8911DF00EC5626 /* Assets.xcassets in Resources */,
+				EA1CC0051C8911DF00EC5626 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA1CC00E1C8911DF00EC5626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA1CC0191C8911DF00EC5626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18EA8B1501F621513713B871 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2D38C14FE9F7032B0A71C35C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Macy'sAssessmentUITests/Pods-Macy'sAssessmentUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31208CF33E154EC1D18487D1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Macy'sAssessment/Pods-Macy'sAssessment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62EC03DEA4FB8C29FE5A789E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6ADD13770139D870C0922F2D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92F4448FDBE0DB164FF19569 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Macy'sAssessmentTests/Pods-Macy'sAssessmentTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA6E283CBBF48D4D334860C9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Macy'sAssessment/Pods-Macy'sAssessment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E956C14039C2CE0415C76123 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Macy'sAssessmentTests/Pods-Macy'sAssessmentTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA1CBFF31C8911DF00EC5626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1CC0331C89123700EC5626 /* DataHandler.m in Sources */,
+				EA1CC02F1C89120500EC5626 /* Acronym.m in Sources */,
+				EA1CC0371C89127500EC5626 /* AcronymTableViewController.m in Sources */,
+				EA1CC0551C893A6A00EC5626 /* Reachability.m in Sources */,
+				EA1CBFFF1C8911DF00EC5626 /* AppDelegate.m in Sources */,
+				EA1CC04A1C8918BC00EC5626 /* Parser.m in Sources */,
+				EA1CC04E1C891AD600EC5626 /* RequestBuilder.m in Sources */,
+				EA1CC03B1C8912B300EC5626 /* AcronymTableCell.m in Sources */,
+				EA1CBFFC1C8911DF00EC5626 /* main.m in Sources */,
+				EA1CC0471C8917A100EC5626 /* Constant.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA1CC00C1C8911DF00EC5626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1CC0151C8911DF00EC5626 /* Macy_sAssessmentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA1CC0171C8911DF00EC5626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1CC0201C8911DF00EC5626 /* Macy_sAssessmentUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA1CC0121C8911DF00EC5626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA1CBFF61C8911DF00EC5626 /* Macy'sAssessment */;
+			targetProxy = EA1CC0111C8911DF00EC5626 /* PBXContainerItemProxy */;
+		};
+		EA1CC01D1C8911DF00EC5626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA1CBFF61C8911DF00EC5626 /* Macy'sAssessment */;
+			targetProxy = EA1CC01C1C8911DF00EC5626 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA1CC0031C8911DF00EC5626 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA1CC0041C8911DF00EC5626 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA1CC0081C8911DF00EC5626 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA1CC0091C8911DF00EC5626 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA1CC0221C8911DF00EC5626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA1CC0231C8911DF00EC5626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA1CC0251C8911DF00EC5626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A303D2F306F52220B22A767 /* Pods-Macy'sAssessment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Macy'sAssessment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.durgesh.Macy-sAssessment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EA1CC0261C8911DF00EC5626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC734B43E6826B2651D12EC2 /* Pods-Macy'sAssessment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Macy'sAssessment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.durgesh.Macy-sAssessment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EA1CC0281C8911DF00EC5626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32E2C70304E09B09D1C386C7 /* Pods-Macy'sAssessmentTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Macy'sAssessmentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.durgesh.Macy-sAssessmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Macy'sAssessment.app/Macy'sAssessment";
+			};
+			name = Debug;
+		};
+		EA1CC0291C8911DF00EC5626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F0037E47636D8C66F3B19BD /* Pods-Macy'sAssessmentTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Macy'sAssessmentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.durgesh.Macy-sAssessmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Macy'sAssessment.app/Macy'sAssessment";
+			};
+			name = Release;
+		};
+		EA1CC02B1C8911DF00EC5626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EB61893799BB22A3A1FF807 /* Pods-Macy'sAssessmentUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "Macy'sAssessmentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.durgesh.Macy-sAssessmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Macy'sAssessment";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EA1CC02C1C8911DF00EC5626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D71A8C9E4ABDDEFF5B78B97 /* Pods-Macy'sAssessmentUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "Macy'sAssessmentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.durgesh.Macy-sAssessmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Macy'sAssessment";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA1CBFF21C8911DF00EC5626 /* Build configuration list for PBXProject "Macy'sAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA1CC0221C8911DF00EC5626 /* Debug */,
+				EA1CC0231C8911DF00EC5626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA1CC0241C8911DF00EC5626 /* Build configuration list for PBXNativeTarget "Macy'sAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA1CC0251C8911DF00EC5626 /* Debug */,
+				EA1CC0261C8911DF00EC5626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA1CC0271C8911DF00EC5626 /* Build configuration list for PBXNativeTarget "Macy'sAssessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA1CC0281C8911DF00EC5626 /* Debug */,
+				EA1CC0291C8911DF00EC5626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA1CC02A1C8911DF00EC5626 /* Build configuration list for PBXNativeTarget "Macy'sAssessmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA1CC02B1C8911DF00EC5626 /* Debug */,
+				EA1CC02C1C8911DF00EC5626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA1CBFEF1C8911DF00EC5626 /* Project object */;
+}
