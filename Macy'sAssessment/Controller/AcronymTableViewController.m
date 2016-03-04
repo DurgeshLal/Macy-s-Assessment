@@ -9,34 +9,18 @@
 #import "AcronymTableViewController.h"
 #import "AcronymTableCell.h"
 #import <MBProgressHUD.h>
-#import "DataHandler.h"
+#import "RequestManager.h"
 #import "Acronym.h"
-
-static NSString* const kOK = @"OK";
-static NSString* const kError = @"Error";
-static NSString* const kLoading = @"Loading";
-static NSString* const kReuseIdentifier = @"reuseIdentifier";
-static NSString* const kMessage = @"Text Filed Cann't be emply";
-
+#import "Common.h"
 @interface AcronymTableViewController ()<MBProgressHUDDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *txtURL;
-@property (strong, nonatomic) NSMutableArray *dataSource;
+@property (strong, nonatomic) NSArray *dataSource;
 @property (strong, nonatomic) MBProgressHUD *activityIndicator;
 
 @end
 
 @implementation AcronymTableViewController
-
-
--(NSMutableArray *)dataSource
-{
-    if (!_dataSource) {
-        _dataSource = [NSMutableArray new];
-        
-    }
-    return _dataSource;
-}
 
 -(MBProgressHUD *)activityIndicator
 {
@@ -57,10 +41,11 @@ static NSString* const kMessage = @"Text Filed Cann't be emply";
     NSString *string  = self.txtURL.text;
     
     __weak typeof(self) weakSelf = self;
-    [DataHandler getAcronymForString:string fromDataSource:DATA_SOURCE_ANY withCompletion:^(BOOL success, id result, DSErrorCode errorCode) {
+    [RequestManager getAcronymForString:string fromDataSource:DATA_SOURCE_ANY withCompletion:^(BOOL success, id result, DSErrorCode errorCode) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
         if (success) {
-            strongSelf.dataSource = [(NSArray *)result mutableCopy];
+            NSLog(@"Is main Thread %@",[NSThread isMainThread] ? @"YES" : @"NO");
+            strongSelf.dataSource = (NSArray *)result;
             [strongSelf.tableView reloadData];
             [strongSelf.activityIndicator hide:YES];
         } else {
@@ -104,7 +89,13 @@ static NSString* const kMessage = @"Text Filed Cann't be emply";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self getAcronymFromAPI];
+    __weak typeof(self) weakSelf = self;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+    __strong typeof(weakSelf) strongSelf = weakSelf;
+        [strongSelf getAcronymFromAPI];
+    });
+    
 }
 
 
@@ -129,6 +120,20 @@ static NSString* const kMessage = @"Text Filed Cann't be emply";
     
     return cell;
 }
+
+-(void)setDataSource:(NSArray *)dataSource
+{
+    _dataSource = dataSource;
+    [self.tableView reloadData];
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+    Acronym *iObject = self.dataSource[indexPath.row];
+    AcronymTableViewController *destViewController = segue.destinationViewController;
+    destViewController.dataSource = iObject.vars;
+}
+
 
 #pragma mark UITextFieldDelegate
 

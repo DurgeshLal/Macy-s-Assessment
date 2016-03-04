@@ -10,34 +10,55 @@
         <scene sceneID="NQF-Vz-PhY">
             <objects>
                 <tableViewController id="jfb-oF-Fvx" customClass="AcronymTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="VGa-Yk-HHr">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="91" sectionHeaderHeight="28" sectionFooterHeight="28" id="VGa-Yk-HHr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="LAO-Kh-6ho" customClass="AcronymTableCell">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="91" id="LAO-Kh-6ho" customClass="AcronymTableCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="91"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LAO-Kh-6ho" id="oQD-Rq-ZN6">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="90.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acronym" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSu-Qe-inA">
-                                            <rect key="frame" x="8" y="8" width="584" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Acronym" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSu-Qe-inA">
+                                            <rect key="frame" x="8" y="8" width="584" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Acronym" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZA3-MQ-xVN">
+                                            <rect key="frame" x="8" y="60" width="584" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Acronym" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfN-KN-W9v">
+                                            <rect key="frame" x="8" y="34" width="584" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="vSu-Qe-inA" firstAttribute="leading" secondItem="oQD-Rq-ZN6" secondAttribute="leadingMargin" id="DZm-BL-f1d"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="vSu-Qe-inA" secondAttribute="bottom" constant="6.5" id="H8G-EB-MAs"/>
-                                        <constraint firstItem="vSu-Qe-inA" firstAttribute="top" secondItem="oQD-Rq-ZN6" secondAttribute="topMargin" id="Ita-1l-8N2"/>
-                                        <constraint firstItem="vSu-Qe-inA" firstAttribute="trailing" secondItem="oQD-Rq-ZN6" secondAttribute="trailingMargin" id="sa1-LN-Rdm"/>
+                                        <constraint firstItem="bfN-KN-W9v" firstAttribute="trailing" secondItem="oQD-Rq-ZN6" secondAttribute="trailingMargin" id="5Yu-zS-8Bf"/>
+                                        <constraint firstItem="ZA3-MQ-xVN" firstAttribute="leading" secondItem="oQD-Rq-ZN6" secondAttribute="leadingMargin" id="6jg-zd-4QY"/>
+                                        <constraint firstItem="vSu-Qe-inA" firstAttribute="trailing" secondItem="oQD-Rq-ZN6" secondAttribute="trailingMargin" id="LGb-F7-kDL"/>
+                                        <constraint firstItem="ZA3-MQ-xVN" firstAttribute="top" secondItem="bfN-KN-W9v" secondAttribute="bottom" constant="5" id="M9p-rS-SU3"/>
+                                        <constraint firstItem="vSu-Qe-inA" firstAttribute="leading" secondItem="oQD-Rq-ZN6" secondAttribute="leadingMargin" id="RbN-dI-a7O"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ZA3-MQ-xVN" secondAttribute="bottom" constant="1" id="Xyc-5N-Svn"/>
+                                        <constraint firstItem="vSu-Qe-inA" firstAttribute="top" secondItem="oQD-Rq-ZN6" secondAttribute="topMargin" id="bu7-Wh-UHF"/>
+                                        <constraint firstItem="bfN-KN-W9v" firstAttribute="leading" secondItem="oQD-Rq-ZN6" secondAttribute="leadingMargin" id="hxb-lN-1df"/>
+                                        <constraint firstItem="bfN-KN-W9v" firstAttribute="top" secondItem="vSu-Qe-inA" secondAttribute="bottom" constant="6" id="qdf-dU-K9T"/>
+                                        <constraint firstItem="ZA3-MQ-xVN" firstAttribute="trailing" secondItem="oQD-Rq-ZN6" secondAttribute="trailingMargin" id="wc6-94-uX2"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="lblAcronym" destination="vSu-Qe-inA" id="N4T-PU-tdY"/>
+                                    <outlet property="freq" destination="vSu-Qe-inA" id="OjL-Wo-Tdb"/>
+                                    <outlet property="lf" destination="ZA3-MQ-xVN" id="wy9-we-izl"/>
+                                    <outlet property="since" destination="bfN-KN-W9v" id="ZzE-ji-i0Q"/>
+                                    <segue destination="jfb-oF-Fvx" kind="push" id="02N-0o-FKa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -66,7 +87,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jFT-gS-pvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="336"/>
+            <point key="canvasLocation" x="918" y="329"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iwx-QJ-jys">
@@ -87,4 +108,7 @@
             <point key="canvasLocation" x="242" y="336"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Aqx-I0-6c3"/>
+    </inferredMetricsTieBreakers>
 </document>

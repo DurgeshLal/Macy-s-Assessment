@@ -1,5 +1,5 @@
 //
-//  DataHandler.m
+//  RequestManager.m
 //  Macy'sAssessment
 //
 //  Created by Durgesh Gupta on 3/3/16.
@@ -8,12 +8,12 @@
 #import <AFNetworking/AFNetworking.h>
 #import "RequestBuilder.h"
 #import "Reachability.h"
-#import "DataHandler.h"
+#import "RequestManager.h"
 #import "Parser.h"
 
 static NSCache *cache;
 
-@implementation DataHandler
+@implementation RequestManager
 
 +(void) initialize
 {

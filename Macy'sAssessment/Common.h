@@ -1,5 +1,5 @@
 //
-//  Constant.h
+//  Common.h
 //  Macy'sAssessment
 //
 //  Created by Durgesh Gupta on 3/3/16.
@@ -12,6 +12,11 @@
 #define IS_VALID_ARRAY(x) (IS_VALID_OBJECT(x) && (x).count > 0)
 
 extern NSString *const baseURL;
+extern NSString *const kOK;
+extern NSString *const kError;
+extern NSString *const kLoading;
+extern NSString *const kReuseIdentifier;
+extern NSString *const kMessage;
 
 typedef enum DataSource {
     DATA_SOURCE_ANY,
@@ -27,6 +32,6 @@ typedef enum DSErrorCode : NSInteger {
 
 typedef void (^DSCompletion)(BOOL success, id result, DSErrorCode errorCode);
 
-@interface Constant : NSObject
+@interface Common : NSObject
 
 @end

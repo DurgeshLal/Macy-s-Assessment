@@ -1,5 +1,5 @@
 //
-//  DataHandler.h
+//  RequestManager.h
 //  Macy'sAssessment
 //
 //  Created by Durgesh Gupta on 3/3/16.
@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Constant.h"
-@interface DataHandler : NSObject
+#import "Common.h"
+@interface RequestManager : NSObject
 + (void) getAcronymForString:(NSString *)string
               fromDataSource:(DataSource)dataSource
               withCompletion:(DSCompletion)completion;

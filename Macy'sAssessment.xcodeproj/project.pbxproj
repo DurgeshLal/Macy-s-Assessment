@@ -18,10 +18,10 @@
 		EA1CC0151C8911DF00EC5626 /* Macy_sAssessmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0141C8911DF00EC5626 /* Macy_sAssessmentTests.m */; };
 		EA1CC0201C8911DF00EC5626 /* Macy_sAssessmentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC01F1C8911DF00EC5626 /* Macy_sAssessmentUITests.m */; };
 		EA1CC02F1C89120500EC5626 /* Acronym.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC02E1C89120500EC5626 /* Acronym.m */; };
-		EA1CC0331C89123700EC5626 /* DataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0321C89123700EC5626 /* DataHandler.m */; };
+		EA1CC0331C89123700EC5626 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0321C89123700EC5626 /* RequestManager.m */; };
 		EA1CC0371C89127500EC5626 /* AcronymTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0361C89127500EC5626 /* AcronymTableViewController.m */; };
 		EA1CC03B1C8912B300EC5626 /* AcronymTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC03A1C8912B300EC5626 /* AcronymTableCell.m */; };
-		EA1CC0471C8917A100EC5626 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0461C8917A100EC5626 /* Constant.m */; };
+		EA1CC0471C8917A100EC5626 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0461C8917A100EC5626 /* Common.m */; };
 		EA1CC04A1C8918BC00EC5626 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0491C8918BC00EC5626 /* Parser.m */; };
 		EA1CC04E1C891AD600EC5626 /* RequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC04D1C891AD600EC5626 /* RequestBuilder.m */; };
 		EA1CC0551C893A6A00EC5626 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1CC0541C893A6A00EC5626 /* Reachability.m */; };
@@ -70,14 +70,14 @@
 		EA1CC0211C8911DF00EC5626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA1CC02D1C89120500EC5626 /* Acronym.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Acronym.h; path = Model/Acronym.h; sourceTree = "<group>"; };
 		EA1CC02E1C89120500EC5626 /* Acronym.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Acronym.m; path = Model/Acronym.m; sourceTree = "<group>"; };
-		EA1CC0311C89123700EC5626 /* DataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataHandler.h; path = DataHandler/DataHandler.h; sourceTree = "<group>"; };
-		EA1CC0321C89123700EC5626 /* DataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataHandler.m; path = DataHandler/DataHandler.m; sourceTree = "<group>"; };
+		EA1CC0311C89123700EC5626 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestManager.h; path = DataHandler/RequestManager.h; sourceTree = "<group>"; };
+		EA1CC0321C89123700EC5626 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestManager.m; path = DataHandler/RequestManager.m; sourceTree = "<group>"; };
 		EA1CC0351C89127500EC5626 /* AcronymTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AcronymTableViewController.h; path = Controller/AcronymTableViewController.h; sourceTree = "<group>"; };
 		EA1CC0361C89127500EC5626 /* AcronymTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AcronymTableViewController.m; path = Controller/AcronymTableViewController.m; sourceTree = "<group>"; };
 		EA1CC0391C8912B300EC5626 /* AcronymTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AcronymTableCell.h; path = View/AcronymTableCell.h; sourceTree = "<group>"; };
 		EA1CC03A1C8912B300EC5626 /* AcronymTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AcronymTableCell.m; path = View/AcronymTableCell.m; sourceTree = "<group>"; };
-		EA1CC0451C8917A100EC5626 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
-		EA1CC0461C8917A100EC5626 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
+		EA1CC0451C8917A100EC5626 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		EA1CC0461C8917A100EC5626 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		EA1CC0481C8918BC00EC5626 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Parser.h; path = Parser/Parser.h; sourceTree = "<group>"; };
 		EA1CC0491C8918BC00EC5626 /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Parser.m; path = Parser/Parser.m; sourceTree = "<group>"; };
 		EA1CC04C1C891AD600EC5626 /* RequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestBuilder.h; path = RequestBuilder/RequestBuilder.h; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				EA1CC0561C893A6F00EC5626 /* ThirdParty */,
-				EA1CC0341C89124100EC5626 /* DataHandler */,
+				EA1CC0341C89124100EC5626 /* RequestManager */,
 				EA1CC04B1C8918C400EC5626 /* Parser */,
 				EA1CC04F1C891AE100EC5626 /* RequestBuilder */,
 				EA1CC0401C8912F100EC5626 /* Utility */,
@@ -216,13 +216,13 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		EA1CC0341C89124100EC5626 /* DataHandler */ = {
+		EA1CC0341C89124100EC5626 /* RequestManager */ = {
 			isa = PBXGroup;
 			children = (
-				EA1CC0311C89123700EC5626 /* DataHandler.h */,
-				EA1CC0321C89123700EC5626 /* DataHandler.m */,
+				EA1CC0311C89123700EC5626 /* RequestManager.h */,
+				EA1CC0321C89123700EC5626 /* RequestManager.m */,
 			);
-			name = DataHandler;
+			name = RequestManager;
 			sourceTree = "<group>";
 		};
 		EA1CC0381C89128600EC5626 /* Controller */ = {
@@ -246,8 +246,8 @@
 		EA1CC0401C8912F100EC5626 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				EA1CC0451C8917A100EC5626 /* Constant.h */,
-				EA1CC0461C8917A100EC5626 /* Constant.m */,
+				EA1CC0451C8917A100EC5626 /* Common.h */,
+				EA1CC0461C8917A100EC5626 /* Common.m */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -548,7 +548,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA1CC0331C89123700EC5626 /* DataHandler.m in Sources */,
+				EA1CC0331C89123700EC5626 /* RequestManager.m in Sources */,
 				EA1CC02F1C89120500EC5626 /* Acronym.m in Sources */,
 				EA1CC0371C89127500EC5626 /* AcronymTableViewController.m in Sources */,
 				EA1CC0551C893A6A00EC5626 /* Reachability.m in Sources */,
@@ -557,7 +557,7 @@
 				EA1CC04E1C891AD600EC5626 /* RequestBuilder.m in Sources */,
 				EA1CC03B1C8912B300EC5626 /* AcronymTableCell.m in Sources */,
 				EA1CBFFC1C8911DF00EC5626 /* main.m in Sources */,
-				EA1CC0471C8917A100EC5626 /* Constant.m in Sources */,
+				EA1CC0471C8917A100EC5626 /* Common.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

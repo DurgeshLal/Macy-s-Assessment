@@ -7,7 +7,7 @@
 //
 
 #import "RequestBuilder.h"
-#import "Constant.h"
+#import "Common.h"
 
 @implementation RequestBuilder
 

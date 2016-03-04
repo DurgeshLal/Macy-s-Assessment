@@ -8,7 +8,9 @@
 
 #import "AcronymTableCell.h"
 @interface AcronymTableCell ()
-@property (weak, nonatomic) IBOutlet UILabel *lblAcronym;
+@property (weak, nonatomic) IBOutlet UILabel *freq;
+@property (weak, nonatomic) IBOutlet UILabel *since;
+@property (weak, nonatomic) IBOutlet UILabel *lf;
 
 @end
 
@@ -17,10 +19,14 @@
 
 -(void)linkTableCellWithDataModel:(Acronym *)iObject
 {
-    self.lblAcronym.text = iObject.lf;
+    self.since.text = [NSString stringWithFormat:@"%@",iObject.since];
+    self.freq.text = [NSString stringWithFormat:@"%@",iObject.freq];
+    self.lf.text = iObject.lf;
 }
 -(void)prepareForReuse
 {
-    self.lblAcronym.text = @"";
+    self.since.text = @"";
+    self.freq.text = @"";
+    self.lf.text = @"";
 }
 @end

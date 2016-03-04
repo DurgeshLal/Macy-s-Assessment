@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Constant.h"
+#import "Common.h"
 
 @interface Parser : NSObject
 
